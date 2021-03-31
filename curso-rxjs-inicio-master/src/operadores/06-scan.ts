@@ -1,5 +1,6 @@
 import { from } from 'rxjs';
 import { reduce, scan, map } from 'rxjs/operators';
+
 /* Nota: El scan es similar al reduce con la diferencia que los valores
  entrantes se emiten en ese instante*/
 

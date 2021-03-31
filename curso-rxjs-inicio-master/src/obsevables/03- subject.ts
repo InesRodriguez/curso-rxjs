@@ -28,6 +28,9 @@ const intervalo$ = new Observable<number>(subs => {
  * 1- Casteo multiple (Soporta multiple subscripciones)
  * 2- Tambien es un observer
  * 3 - permite manejar next, error y complete
+ * Subject es que es un tipo muy especial de observable, ya que permite que los valores sean
+ *  “multicasted” a más de un observer. A diferencia de los observables simples que son unicast, 
+ * todos los observers suscritos a él recibirán los mismos valores.
 */
 const Subject$ = new Subject();
 const subscription= intervalo$.subscribe(Subject$);
